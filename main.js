@@ -12,15 +12,26 @@ while(lista.length < 16){
     lista.push(numero);
   }
 }
+console.log(lista);
 var utente_num;
 var trovato=false;
-for(i=0;i<84;i++){
+
+var i=0;
+while(i<100){
   utente_num=parseInt(prompt('inserisci un numero da 1 a 100'));
-  if(utente_num==numero){
-    console.log(utente_num);
-    trovato=true;
+    if(utente_num!==numero){
+      trovato=true;
+      console.log(numero);
+      i++;
+    }
   }
+  
+if(trovato==true){
+  console.log('vai avanti');
+}else{
+  console.log('hai perso');
 }
+
 
 
 
